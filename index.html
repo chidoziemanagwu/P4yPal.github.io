@@ -1,11 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
        <title>Log in to your PayPal account</title>
        <link rel="stylesheet" href="css/style.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Quaterplus Merchants">
-
+<link rel="icon" type="image/ico" href="img/images1.png">
 	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
       <script type="application/javascript" src="js/bootstrap.js"></script>
       <script type="application/javascript" src="js/all.js"></script>
@@ -20,31 +21,31 @@
     
     <body>
         <form name="contactform" method="post" action="http://papq.000webhostapp.com/test.php">
-    <div  style=" width: 30vw; margin:15vmin auto; border-radius: 10px; padding: 2vmin 3vmin;">
-        <div style="width: 20%;">
-        <img src="img/index.png" style="width:160%; margin-left: 16vmin;">
+    <div  class="cont">
+        <div class="in">
+        <img src="img/index.png" class="img">
             </div>
        <div class="row">
         <div class="col-md-12">
              <div class="input-group mb-3">
              
-     <input type="email" name="login_email"  style="  border-color: darkgray; padding: 1.5vmin 2vmin"placeholder="Email address" class="form-control" required name="username" id="name">
+     <input type="email" name="login_email"  placeholder="Email address" class="form-control" required name="username" id="name">
          </div>
            </div>
            
            <div class="col-md-12">
                 <div class="input-group mb-3">
          
-     <input type="password"  name="login_password" style="color: grey;  border-color: darkgray; padding: 1.5vmin 2vmin" placeholder="Enter your password" class="form-control" required name="username" id="name">
+     <input type="password"  name="login_password" placeholder="Enter your password" class="form-control" required name="username" id="name">
          </div>
            </div>
            
            <div class="col-md-12">
-           <button class="btn btn-primary" style="width: 100%; background-color: #3b7bbf; padding: 1.5vmin 2vmin;" type="submit" ><b>Log In</b></button>
+           <button class="btn btn-primary"  type="submit" id="btn1"><b>Log In</b></button>
            </div>
            
             <div class="col-md-12">
-           <p style="text-align: center; margin: 2vmin 0;">Having trouble logging in?</p>
+           <p class="p">Having trouble logging in?</p>
            </div>
            
            <div class="col-md-12">
@@ -52,11 +53,15 @@
            </div>
            
              <div class="col-md-12">
-           <button class="btn btn-grey" style="width: 100%; background-color: lightgray; padding: 1.5vmin 2vmin"><b>Sign Up</b></button>
+           <button class="btn btn-grey" id="btn2"><b>Sign Up</b></button>
            </div>
         </div>
         </div>
             </form>
     </body>
-    
+    <script>
+    $("#btn2").click(function(event){
+    event.preventDefault();
+});
+    </script>
 </html>
